@@ -62,7 +62,9 @@ https://youtu.be/OoVBKQRijko?si=rOAzt9pDj8ebLRmc
 
 # Hello World
 
-`(princ "Hello, world!")`
+```
+(princ "Hello, world!")
+```
 
 running this with sbcl is like this:
 
@@ -85,7 +87,9 @@ Load also returns a value because all functions in common lisp have to return a 
 
 another way of writing that would be
 
-`(format t "Hello, world!")`
+```
+(format t "Hello, world!")
+```
 
 this gives the following result:
 
@@ -98,7 +102,9 @@ T
 
 or with the following
 
-`(format nil "Hello, world!")`
+```
+(format nil "Hello, world!")
+```
 
 you get:
 
@@ -111,7 +117,9 @@ The first parameter passed to format is its output destination. t, meaning true 
 
 If you do the following:
 
-`(princ (format nil "this is a list ~A~% " (list 1 10)))`
+```
+(princ (format nil "this is a list ~A~% " (list 1 10)))
+```
 
 The result will be:
 
@@ -152,9 +160,9 @@ False
 
 Because all functions have to return a value, princ also returns the string it prints to standard output
 
-`
+```
 (princ (if nil (princ "True") (princ "False")))
-`
+```
 
 ```
 FalseFalse
